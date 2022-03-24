@@ -6,7 +6,7 @@
 
 body{
     color: black;
-    background-color: #FFFF;
+    background: #FFFF;
     background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23c9f0ff' fill-opacity='0.6' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
@@ -25,8 +25,6 @@ ul{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 300px;
-  weight: 100%;
   background: url("https://scontent.fgdl10-1.fna.fbcdn.net/v/t31.18172-8/981078_10151460058158310_1725608524_o.png?_nc_cat=109&ccb=1-5&_nc_sid=174925&_nc_eui2=AeHCRQmD3EtU-0DuxPLrVWyKN9ZBlFD57-s31kGUUPnv6y8gKHygsB_42BhD5CLXUj8&_nc_ohc=1EGOpOfSlaUAX_jFpWL&_nc_ht=scontent.fgdl10-1.fna&oh=00_AT_V6iz-68vpJ13m7wKd0QSTLzjHo2uqr289f7poGwXHUg&oe=6262CE37")no-repeat center top;
   background-size:cover;
   background-position:bottom;
@@ -46,6 +44,8 @@ ul{
     height: 60px;
     padding: 20px;
     background-color: #EFD920;
+    position: fixed;
+    top: 0
 }
 
 .nav-brand{

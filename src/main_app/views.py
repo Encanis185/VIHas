@@ -9,3 +9,15 @@ def home(request):
 
 def about(request):
     return HttpResponse('<h1>About us</h>')
+
+def donation(request):
+    return HttpResponse('<h1>Haz una donación</h>')
+
+def prueba(request):
+    return HttpResponse('<h1>Hazte la prueba</h>')
+
+def preguntas(request):
+    return HttpResponse('<h1>Preguntas Frecuentes<h>')
+
+def contacto(request):
+    return HttpResponse('<h1>Contacto<h>')
