@@ -25,9 +25,10 @@ ul{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("https://scontent.fgdl10-1.fna.fbcdn.net/v/t31.18172-8/981078_10151460058158310_1725608524_o.png?_nc_cat=109&ccb=1-5&_nc_sid=174925&_nc_eui2=AeHCRQmD3EtU-0DuxPLrVWyKN9ZBlFD57-s31kGUUPnv6y8gKHygsB_42BhD5CLXUj8&_nc_ohc=1EGOpOfSlaUAX_jFpWL&_nc_ht=scontent.fgdl10-1.fna&oh=00_AT_V6iz-68vpJ13m7wKd0QSTLzjHo2uqr289f7poGwXHUg&oe=6262CE37")no-repeat center top;
+  /*background: url("")no-repeat center top;*/
   background-size:cover;
   background-position:bottom;
+  position:inherit
 }
 
 .container{
@@ -42,6 +43,7 @@ ul{
     justify-content: space-between;
     align-items: center;
     height: 60px;
+    width: 1350px;
     padding: 20px;
     background-color: #EFD920;
     position: fixed;
