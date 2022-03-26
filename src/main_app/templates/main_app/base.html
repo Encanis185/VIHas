@@ -1,0 +1,76 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIHas de Vida</title>
+    <!-- FONT AWESOME for icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href='{% static "css/styles.css" %}' type="text/css"/>
+    <link rel="icon" href="https://yt3.ggpht.com/ytc/AAUvwnibGOauTve7iPXpxbw-EZgS5TxkAyJo9iCr22l3=s900-c-k-c0x00ffffff-no-rj">
+</head>
+<body>
+  <header class= "header">
+    <center>
+      <h1>
+      <img src="https://yt3.ggpht.com/ytc/AAUvwnibGOauTve7iPXpxbw-EZgS5TxkAyJo9iCr22l3=s900-c-k-c0x00ffffff-no-rj" alt="logotipo" height="200px" width="200px">
+    </h1>
+    <h1>{{title}}</h1>
+    </center>
+
+</header>
+    <div class="container">
+        <nav class="nav-main">
+            <img src="https://www.huesped.org.ar/wp-content/uploads/2021/06/bqcqgzquu5ayrefnor2j24adh4.jpg" alt="VIHas Logo" class="nav-brand" height="50px">
+            <ul class="nav-menu">
+                <li>
+                    <a href="#">Inicio</a>
+                </li>
+                <li>
+                    <a href="#">Acerca de Nosotros</a>
+                </li>
+                <li>
+                    <a href="#">Haz una Donación</a>
+                </li>
+                <li>
+                    <a href="#">Hazte la Prueba</a>
+                </li>
+                <li>
+                    <a href="#">Preguntas Frecuentes</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+            </ul>
+            <ul class="nav-menu-right">
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-skull-crossbones"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <hr>
+
+        <!-- Showcase -->
+        <header class="showcase" color: white>
+            <h2>Centro de Atención Integral en VIH-SIDA, A.C.</h2>
+            <p>
+              Somos una organización de la sociedad civil que contribuye a generar una cultura de respeto e inclusión frente a la realidad social del VIH</p>
+            <a href="#" class="btn">Leer más <i class="fas fa-angle-double-right"></i></a>
+        </header>
+
+        <!--Lo que esta aqui es lo que se supone es el template base.
+        Claramente lo podemos seguir editanto, sin embargo hay que tener en cuenta 
+        donde quedan las etiquetas del bloque de contenido. 
+        Quizas agregar algo hasta abajo del body xd-->
+        {% block content %}{% endblock %}
+    </div>
+
+
+</body>
+</html>

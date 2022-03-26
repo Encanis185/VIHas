@@ -4,20 +4,38 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return render(request, 'main_app/index.html')
+    context = {
+        'title':'VIHas de VIDA'
+    }
+    return render(request, 'main_app/index.html', context)
 
 
-def about(request):
-    return HttpResponse('<h1>About us</h>')
+def acerca(request):
+    context = {
+        'title':'Acerca de nosotros'
+    }
+    return render(request, 'main_app/acerca.html', context)
 
-def donation(request):
-    return HttpResponse('<h1>Haz una donación</h>')
+def donacion(request):
+    context = {
+        'title':'Acerca de nosotros'
+    }
+    return render(request, 'main_app/donacion.html', context)
 
 def prueba(request):
-    return HttpResponse('<h1>Hazte la prueba</h>')
+    context = {
+        'title':'Acerca de nosotros'
+    }
+    return render(request, 'main_app/prueba.html', context)
 
 def preguntas(request):
-    return HttpResponse('<h1>Preguntas Frecuentes<h>')
+    context = {
+        'title':'Acerca de nosotros'
+    }
+    return render(request, 'main_app/preguntas.html', context)
 
 def contacto(request):
-    return HttpResponse('<h1>Contacto<h>')
+    context = {
+        'title':'Acerca de nosotros'
+    }
+    return render(request, 'main_app/contacto.html', context)
