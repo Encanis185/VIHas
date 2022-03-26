@@ -25,7 +25,6 @@ ul{
   display: flex;
   justify-content: center;
   align-items: center;
-  /*background: url("")no-repeat center top;*/
   background-size:cover;
   background-position:bottom;
   position:inherit
