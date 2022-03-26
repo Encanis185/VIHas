@@ -18,24 +18,24 @@ def acerca(request):
 
 def donacion(request):
     context = {
-        'title':'Acerca de nosotros'
+        'title':'Tus donaciones salvan vidas'
     }
     return render(request, 'main_app/donacion.html', context)
 
 def prueba(request):
     context = {
-        'title':'Acerca de nosotros'
+        'title':'Hazte la prueba'
     }
     return render(request, 'main_app/prueba.html', context)
 
 def preguntas(request):
     context = {
-        'title':'Acerca de nosotros'
+        'title':'Preguntas frecuentes'
     }
     return render(request, 'main_app/preguntas.html', context)
 
 def contacto(request):
     context = {
-        'title':'Acerca de nosotros'
+        'title':'Contacto'
     }
     return render(request, 'main_app/contacto.html', context)
