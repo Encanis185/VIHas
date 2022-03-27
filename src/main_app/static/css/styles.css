@@ -41,7 +41,7 @@ ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
+    height: 30px;
     width: 1350px;
     padding: 20px;
     background-color: #EFD920;
@@ -167,4 +167,9 @@ hr{
 
 .btn-blog-cards:hover{
     text-decoration: underline;
+}
+
+.album_img{
+  width: 33%;
+  height: 300px;
 }
