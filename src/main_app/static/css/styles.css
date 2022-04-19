@@ -6,8 +6,6 @@
 
 body{
     color: black;
-    background: #FFFF;
-    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23c9f0ff' fill-opacity='0.6' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -19,6 +17,25 @@ a {
 
 ul{
     list-style: none;
+}
+
+h1{
+  text-align: center;
+}
+
+.img_acerca{
+  width:50%;
+  height:510px;
+  border-radius:100px;
+}
+
+.img_donar{
+  width:50%;
+  height:600px;
+  border-radius:5px;
+  /*Centrar*/
+  display: block;
+  margin: 0px auto;
 }
 
 .header{
@@ -172,4 +189,22 @@ hr{
 .album_img{
   width: 33%;
   height: 300px;
+}
+
+.contacto{
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #1883ba;
+  border-radius: 6px;
+  border: 2px solid #0016b0;
+  position: relative;
+  left: 43.5%;
+}
+
+.contacto:hover{
+  color: #1883ba;
+  background-color: #ffffff;
 }

@@ -6,13 +6,15 @@
     vihascliente@gmail.com : vihascliente
 -->
 {% block content %}
-<h1>Haz una Donación</h1>
+<hr><h1>Haz una Donación</h1><hr>
 <!--Id: Lo obtuve del sandbox de paypal :p -->
+
 <script src="https://www.paypal.com/sdk/js?client-id=Ae8tDKPGL3foK6hnQDphMHfCGGzr3FQJKj7HwO3rozAfRPIvALkm3FKe97ag4AACISrVov7O4DMUJ6aX&currency=USD"></script>
+<p align="center">Con tu donación ayudarás a que esta asociación mejore y crezca para seguir apoyando a las personas con VIH. ¡Haz la diferencia!</p><br>
+<img class="img_donar" align="center" src="https://scontent.fgdl10-1.fna.fbcdn.net/v/t31.18172-8/1402206_10151801713843310_453750324_o.png?_nc_cat=108&ccb=1-5&_nc_sid=de6eea&_nc_eui2=AeEb4l-GTr_jsy7y9iTHnzeP-Su2xPYqpa35K7bE9iqlrZnamKvOZEEy5tnFHmtOKIk&_nc_ohc=Noak-TT-IzsAX_ZEF9c&_nc_ht=scontent.fgdl10-1.fna&oh=00_AT-jwHBKixPYGJJFbv0sqq3VK9xwQmdsh7gbFLiuJGWG7w&oe=6285FA89">
 
 <!-- Set up a container element for the button -->
-<div id="paypal-button-container"></div>
-
+<div id="paypal-button-container" align="center"></div>
 <!--Cambiar estilo de botones: https://developer.paypal.com/sdk/js/reference/#style -->
 <script>
   paypal.Buttons({
