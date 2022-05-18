@@ -4,7 +4,7 @@
 {% block content %}
 <hr><h1>Contacto</h1><hr>
 
-<img height="340px" src="http://assets.stickpng.com/images/5a452601546ddca7e1fcbc87.png" style="float:right;">
+<img height="340px" src="http://assets.stickpng.com/images/5a452601546ddca7e1fcbc87.png" style="float:right">
 
 <b>Representante Legal</b><br>
 <p> Alejandra Palos
@@ -13,12 +13,36 @@ En su calidad de Directora</p><br>
 <p>(52-33) 38151539</p><br>
 <b>Correo electrónico</b>
 <p>vihasdevida@gmail.com</p><br>
-<b>Dirección</b>
-<p>Calle Madero 836 entre calles Escorza y Camarena
-a un lado del Templo Expiatorio
-Colonia Americana Oriente
-44160, Guadalajara, Jalisco</p><br>
+<b>Dirección</b><br>
+<a target="_blank" href="https://www.google.com/maps/place/VIHas+de+Vida/@20.6809947,-103.3528992,15z/data=!4m5!3m4!1s0x0:0x7f92fd34a84702c0!8m2!3d20.6809923!4d-103.3528993">Calle Garibaldi 641, Zona Centro, 44100 Guadalajara, Jal.</a><br><br>
 <b>Facebook/Twitter</b>
 <p>@vihasdevida</p>
+<script>
+  function validaDatos(){
+    var asunto = document.forma01.asunto.value;
+    var desc = document.forma01.descripcion.value;
+    var email = document.forma01.email.value;
+    if(asunto.length == 0 || desc.length == 0 || email.length == 0){
+      swal("Error","Faltan campos por llenar","error");
+      return false;
+    }
+    else {
+      swal("¡Correo Enviado!","Nos Pondremos en contacto contigo","success");
+      document.forma01.asunto.value = "";
+      document.forma01.descripcion.value = "";
+      document.forma01.email.value = "";
+      return false;
+    }
+  }
+
+</script>
+
+<form name="forma01" class="formulario" action="/" method="get">
+  <b>Envianos un Correo</b><br><br>
+  <input type="text" name="asunto" id="asunto" class="boton" placeholder="Asunto"><br>
+  <input type="text" name="email" id="email" class="boton" placeholder="Email"><br>
+  <textarea name="descripcion" id="descripcion" class="boton" rows="8" cols="80"></textarea><br>
+  <input type="submit" name="enviar" value="Enviar" onclick="return validaDatos();">
+</form>
 
 {% endblock content %}
