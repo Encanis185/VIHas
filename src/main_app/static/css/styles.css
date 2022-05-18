@@ -373,3 +373,20 @@ footer {
   .social-network a {
     background-color: #F9F9F9;
   }
+
+  .formulario{
+    width: 880px;
+    background: #41E0E5;
+    padding: 30px;
+    border-radius: 4px;
+  }
+
+  .boton{
+    width: 95%;
+    background: #B5C1C1;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #BEF0EE;
+    font-size: 18px;
+  }
